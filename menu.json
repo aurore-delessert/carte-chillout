@@ -73,7 +73,7 @@
       "available": true
     },
     {
-      "name": "Hazy Jane Guava",
+      "name": "Hazy Jane Tropical",
       "brewery": "Brewdog",
       "type": "Blonde",
       "abv": 5.0,
@@ -106,7 +106,7 @@
       "abv": 4.7,
       "size": "50 cl",
       "price": 3,
-      "available": true
+      "available": false
     },
     {
       "name": "Stirling",
@@ -131,24 +131,6 @@
       "brewery": "Whitefrontier",
       "type": "Ambrée",
       "abv": 5.0,
-      "size": "33 cl",
-      "price": 3,
-      "available": true
-    },
-    {
-      "name": "Martigny Vice",
-      "brewery": "Whitefrontier",
-      "type": "IPA",
-      "abv": 3.5,
-      "size": "33 cl",
-      "price": 3,
-      "available": true
-    },
-    {
-      "name": "Pillow",
-      "brewery": "Whitefrontier",
-      "type": "Blanche",
-      "abv": 4.0,
       "size": "33 cl",
       "price": 3,
       "available": true
@@ -246,7 +228,7 @@
       "available": true
     },
     {
-      "name": "La Blonde",
+      "name": "Corbeau",
       "brewery": "Corbeau",
       "type": "Blonde",
       "abv": 9.0,
@@ -293,22 +275,13 @@
       "available": true
     },
     {
-      "name": "Cidre Ananas",
-      "brewery": "Black Pig",
-      "type": "Cidre",
-      "abv": 6.8,
-      "size": "33 cl",
-      "price": 3,
-      "available": true
-    },
-    {
       "name": "Hazy Nectar",
       "brewery": "Gosnells",
       "type": "Hydromel",
       "abv": 4.0,
       "size": "33 cl",
       "price": 3,
-      "available": true
+      "available": false
     }
   ],
   "softs": [
