@@ -228,7 +228,7 @@
       "available": true
     },
     {
-      "name": "Corbeau",
+      "name": "La blonde",
       "brewery": "Corbeau",
       "type": "Blonde",
       "abv": 9.0,
@@ -281,7 +281,7 @@
       "abv": 4.0,
       "size": "33 cl",
       "price": 3,
-      "available": false
+      "available": true
     }
   ],
   "softs": [
