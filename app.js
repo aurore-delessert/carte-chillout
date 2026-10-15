@@ -129,7 +129,11 @@ function _renderList() {
     return typeOk && makerOk;
   });
 
-  items = [...items].sort((a, b) => Number(a.price) - Number(b.price));
+  items = [...items].sort((a, b) => {
+    const soldA = a.available === false ? 1 : 0;
+    const soldB = b.available === false ? 1 : 0;
+    return soldA - soldB || Number(a.price) - Number(b.price);
+  });
 
   if (items.length === 0) {
     container.appendChild(_el("div", "Empty", "Rien à afficher ici."));
