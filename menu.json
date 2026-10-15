@@ -1,19 +1,19 @@
 {
   "beers": [
     {
-      "name": "Placebo RED",
-      "brewery": "Dr.Gabs",
-      "type": "∅ Alcool",
-      "abv": 0.0,
-      "size": "33 cl",
-      "price": 2,
+      "name": "Appenzeller Panaché",
+      "brewery": "Locher",
+      "type": "Panaché",
+      "abv": 6.0,
+      "size": "50 cl",
+      "price": 3,
       "available": true
     },
     {
-      "name": "Placebo IPA",
-      "brewery": "Dr.Gabs",
-      "type": "∅ Alcool",
-      "abv": 0.0,
+      "name": "POP",
+      "brewery": "Baladin",
+      "type": "Blonde",
+      "abv": 6.0,
       "size": "33 cl",
       "price": 2,
       "available": true
@@ -21,28 +21,28 @@
     {
       "name": "FreeDamm",
       "brewery": "Damm",
-      "type": "∅ Alcool",
+      "type": "Sans alcool",
       "abv": 0.0,
       "size": "33 cl",
       "price": 1,
       "available": true
     },
     {
-      "name": "Pecheresse 0.0",
-      "brewery": "Lindemans",
-      "type": "∅ Alcool",
-      "abv": 0.0,
-      "size": "25 cl",
+      "name": "Wingman",
+      "brewery": "Brewdog",
+      "type": "IPA",
+      "abv": 4.3,
+      "size": "33 cl",
       "price": 2,
       "available": true
     },
     {
-      "name": "Swaf",
-      "brewery": "Dr.Gabs",
-      "type": "Blonde",
-      "abv": 4.5,
+      "name": "Punk IPA gluten free",
+      "brewery": "Brewdog",
+      "type": "IPA",
+      "abv": 5.4,
       "size": "33 cl",
-      "price": 1,
+      "price": 2,
       "available": true
     },
     {
@@ -52,6 +52,15 @@
       "abv": 5.4,
       "size": "50 cl",
       "price": 3,
+      "available": true
+    },
+    {
+      "name": "Lost",
+      "brewery": "Brewdog",
+      "type": "Blonde",
+      "abv": 4.5,
+      "size": "44 cl",
+      "price": 2,
       "available": true
     },
     {
@@ -91,17 +100,26 @@
       "available": true
     },
     {
+      "name": "Zepp",
+      "brewery": "Nébuleuse",
+      "type": "Blonde",
+      "abv": 4.7,
+      "size": "50 cl",
+      "price": 3,
+      "available": true
+    },
+    {
       "name": "Stirling",
       "brewery": "Nébuleuse",
       "type": "Pale Ale",
-      "abv": 5.3,
+      "abv": 4.7,
       "size": "50 cl",
       "price": 3,
       "available": true
     },
     {
       "name": "Speakeasy",
-      "brewery": "Whitefrontier",
+      "brewery": "Nébuleuse",
       "type": "IPA",
       "abv": 4.0,
       "size": "33 cl",
@@ -111,7 +129,7 @@
     {
       "name": "Log-Out",
       "brewery": "Whitefrontier",
-      "type": "IPA",
+      "type": "Ambrée",
       "abv": 5.0,
       "size": "33 cl",
       "price": 3,
@@ -119,8 +137,8 @@
     },
     {
       "name": "Martigny Vice",
-      "brewery": "Hoppy People",
-      "type": "Blanche",
+      "brewery": "Whitefrontier",
+      "type": "IPA",
       "abv": 3.5,
       "size": "33 cl",
       "price": 3,
@@ -128,36 +146,28 @@
     },
     {
       "name": "Pillow",
-      "brewery": "Hoppy People",
-      "type": "Blonde",
+      "brewery": "Whitefrontier",
+      "type": "Blanche",
       "abv": 4.0,
       "size": "33 cl",
       "price": 3,
       "available": true
     },
     {
-      "name": "Cuvée des Trolls",
+      "name": "Cuvée des trolls",
       "brewery": "Dubuisson",
       "type": "Blonde",
       "abv": 7.0,
       "size": "33 cl",
       "price": 3,
+      "deposit": 0.3,
       "available": true
     },
     {
-      "name": "Pornstar",
-      "brewery": "Dubuisson",
+      "name": "Porn Star",
+      "brewery": "Hoppy People",
       "type": "IPA",
       "abv": 6.1,
-      "size": "33 cl",
-      "price": 3,
-      "available": true
-    },
-    {
-      "name": "Robustus",
-      "brewery": "S.Riegele",
-      "type": "Noire",
-      "abv": 5.0,
       "size": "33 cl",
       "price": 3,
       "available": true
@@ -169,10 +179,29 @@
       "abv": 8.0,
       "size": "33 cl",
       "price": 3,
+      "deposit": 0.5,
+      "available": true
+    },
+    {
+      "name": "Wittekop",
+      "brewery": "Amstein",
+      "type": "Blonde",
+      "abv": 5.0,
+      "size": "33 cl",
+      "price": 2,
       "available": true
     },
     {
       "name": "Pêcheresse",
+      "brewery": "Lindemans",
+      "type": "Lambic",
+      "abv": 2.5,
+      "size": "33 cl",
+      "price": 3,
+      "available": true
+    },
+    {
+      "name": "Kriek",
       "brewery": "Lindemans",
       "type": "Lambic",
       "abv": 2.5,
@@ -217,12 +246,40 @@
       "available": true
     },
     {
-      "name": "La blonde",
+      "name": "La Blonde",
       "brewery": "Corbeau",
       "type": "Blonde",
       "abv": 9.0,
       "size": "33 cl",
       "price": 3,
+      "deposit": true,
+      "available": true
+    },
+    {
+      "name": "Swaf",
+      "brewery": "Dr.Gabs",
+      "type": "Blonde",
+      "abv": 4.5,
+      "size": "33 cl",
+      "price": 1,
+      "available": true
+    },
+    {
+      "name": "Placebo RED",
+      "brewery": "Dr.Gabs",
+      "type": "Sans alcool",
+      "abv": 0.5,
+      "size": "33 cl",
+      "price": 1,
+      "available": true
+    },
+    {
+      "name": "Placebo IPA",
+      "brewery": "Dr.Gabs",
+      "type": "Sans alcool",
+      "abv": 0.5,
+      "size": "33 cl",
+      "price": 1,
       "available": true
     },
     {
@@ -232,181 +289,186 @@
       "abv": 4.5,
       "size": "50 cl",
       "price": 3,
+      "deposit": 0.5,
       "available": true
     },
     {
-      "name": "Wingman",
-      "brewery": "Brewdog",
-      "type": "IPA",
-      "abv": 4.3,
+      "name": "Cidre Ananas",
+      "brewery": "Black Pig",
+      "type": "Cidre",
+      "abv": 6.8,
       "size": "33 cl",
-      "price": 2,
+      "price": 3,
       "available": true
     },
     {
-      "name": "Punk IPA gluten free",
-      "brewery": "Brewdog",
-      "type": "IPA",
-      "abv": 5.4,
+      "name": "Hazy Nectar",
+      "brewery": "Gosnells",
+      "type": "Hydromel",
+      "abv": 4.0,
       "size": "33 cl",
-      "price": 2,
-      "available": true
-    },
-    {
-      "name": "Lost",
-      "brewery": "Nébuleuse",
-      "type": "Blonde",
-      "abv": 4.5,
-      "size": "44 cl",
-      "price": 2,
-      "available": true
-    },
-    {
-      "name": "Zepp",
-      "brewery": "Amstein",
-      "type": "Blonde",
-      "abv": 4.7,
-      "size": "50 cl",
-      "price": 2,
-      "available": true
-    },
-    {
-      "name": "Wittekop",
-      "brewery": "Wittekop",
-      "type": "Blonde",
-      "abv": 5.0,
-      "size": "33 cl",
-      "price": 2,
+      "price": 3,
       "available": true
     }
   ],
   "softs": [
     {
+      "name": "Limonade citron",
+      "brand": "Jurassic-Soda",
+      "type": "Soda",
+      "size": "33 cl",
+      "price": 2,
+      "available": true
+    },
+    {
+      "name": "Rhubarbe",
+      "brand": "Jurassic-Soda",
+      "type": "Soda",
+      "size": "33 cl",
+      "price": 2,
+      "available": true
+    },
+    {
+      "name": "Fraise",
+      "brand": "Jurassic-Soda",
+      "type": "Soda",
+      "size": "33 cl",
+      "price": 2,
+      "available": true
+    },
+    {
+      "name": "Gingembre",
+      "brand": "Jurassic-Soda",
+      "type": "Soda",
+      "size": "33 cl",
+      "price": 2,
+      "available": true
+    },
+    {
+      "name": "Mocktail Mojito",
+      "brand": "Jurassic-Soda",
+      "type": "Mocktail",
+      "size": "33 cl",
+      "price": 3,
+      "available": true
+    },
+    {
+      "name": "Mocktail Piña Colada",
+      "brand": "Jurassic-Soda",
+      "type": "Mocktail",
+      "size": "33 cl",
+      "price": 3,
+      "available": true
+    },
+    {
       "name": "Coca-Cola",
+      "brand": "Coca-Cola",
       "type": "Cola",
       "size": "33 cl",
       "price": 1,
-      "available": true,
-      "brand": "Coca-Cola"
+      "available": true
     },
     {
       "name": "Coca-Cola Zéro",
+      "brand": "Coca-Cola",
       "type": "Cola",
       "size": "33 cl",
       "price": 1,
-      "available": true,
-      "brand": "Coca-Cola"
+      "available": true
     },
     {
-      "name": "Thé froid pêche",
+      "name": "Energy Drink",
+      "brand": "Red Bull",
+      "type": "Energy",
+      "size": "25 cl",
+      "price": 2,
+      "available": true
+    },
+    {
+      "name": "Pêche Hibiscus",
+      "brand": "Fuse Tea",
       "type": "Thé froid",
       "size": "33 cl",
       "price": 1,
       "available": true
     },
     {
-      "name": "Limonade citron",
-      "type": "Soda",
-      "size": "33 cl",
-      "price": 2,
-      "available": true,
-      "brand": "Jurassic-Soda"
-    },
-    {
-      "name": "Rhubarbe",
-      "type": "Soda",
-      "size": "33 cl",
-      "price": 2,
-      "available": true,
-      "brand": "Jurassic-Soda"
-    },
-    {
-      "name": "Energy Drink",
-      "type": "Energy",
-      "size": "25 cl",
-      "price": 2,
-      "available": true,
-      "brand": "Red Bull"
-    },
-    {
       "name": "Maté",
+      "brand": "El Tony",
       "type": "Maté",
       "size": "33 cl",
       "price": 2,
-      "available": true,
-      "brand": "El Tony"
+      "available": true
+    },
+    {
+      "name": "Maté Mint",
+      "brand": "El Tony",
+      "type": "Maté",
+      "size": "33 cl",
+      "price": 2,
+      "available": true
     },
     {
       "name": "Club Mate",
+      "brand": "Club Mate",
       "type": "Maté",
       "size": "50 cl",
       "price": 2,
-      "available": true,
-      "brand": "Club Mate"
+      "available": true
     },
     {
       "name": "Citron",
+      "brand": "Fizzy",
       "type": "Soda",
       "size": "35 cl",
       "price": 2,
-      "available": true,
-      "brand": "Fizzy"
+      "deposit": 1.0,
+      "available": true
     },
     {
       "name": "Framboise",
+      "brand": "Fizzy",
       "type": "Soda",
       "size": "35 cl",
       "price": 2,
-      "available": true,
-      "brand": "Fizzy"
+      "deposit": 1.0,
+      "available": true
     },
     {
       "name": "Mandarine",
+      "brand": "Fizzy",
       "type": "Soda",
       "size": "35 cl",
       "price": 2,
-      "available": true,
-      "brand": "Fizzy"
+      "deposit": 1.0,
+      "available": true
     },
     {
       "name": "Pamplemousse",
+      "brand": "Fizzy",
       "type": "Soda",
       "size": "35 cl",
       "price": 2,
-      "available": true,
-      "brand": "Fizzy"
+      "deposit": 1.0,
+      "available": true
     },
     {
       "name": "Raisin",
+      "brand": "Fizzy",
       "type": "Soda",
       "size": "35 cl",
       "price": 2,
-      "available": true,
-      "brand": "Fizzy"
+      "deposit": 1.0,
+      "available": true
     },
     {
       "name": "Myrtille",
+      "brand": "Fizzy",
       "type": "Soda",
       "size": "35 cl",
       "price": 2,
-      "available": true,
-      "brand": "Fizzy"
-    },
-    {
-      "name": "Mocktail Mojito",
-      "type": "Mocktail",
-      "size": "33 cl",
-      "price": 3,
-      "available": true,
-      "brand": "Jurassic-Soda"
-    },
-    {
-      "name": "Mocktail Piña Colada",
-      "type": "Mocktail",
-      "size": "33 cl",
-      "price": 3,
-      "available": true,
-      "brand": "Jurassic-Soda"
+      "deposit": 1.0,
+      "available": true
     }
   ]
 }

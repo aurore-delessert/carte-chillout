@@ -132,6 +132,13 @@ body {
   color: var(--muted);
 }
 
+.Deposit {
+  margin-top: 2px;
+  font-size: 0.75rem;
+  font-style: italic;
+  color: #6f645a;
+}
+
 .ItemPrice {
   white-space: nowrap;
   font-weight: 700;

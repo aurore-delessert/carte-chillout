@@ -102,6 +102,9 @@ function _buildItem(item, isBeer) {
     if (item.abv !== undefined && item.abv !== null) metaParts.push(_formatAbv(item.abv));
   }
   if (metaParts.length > 0) left.appendChild(_el("div", "ItemMeta", metaParts.join(" · ")));
+  if (item.deposit) {
+    left.appendChild(_el("div", "Deposit", "consigné"));
+  }
   row.appendChild(left);
 
   const right = _el("div", "ItemPrice");
