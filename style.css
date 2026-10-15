@@ -1,0 +1,162 @@
+:root {
+  --bg: #14110f;
+  --card: #1f1a17;
+  --line: #342c27;
+  --text: #f3ece4;
+  --muted: #a89b8e;
+  --accent: #e8a33d;
+}
+
+* { box-sizing: border-box; }
+
+html { overflow-y: scroll; scrollbar-gutter: stable; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.4;
+}
+
+.Header {
+  padding: 24px 16px 8px;
+  text-align: center;
+}
+
+.Header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+}
+
+.Tabs {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  gap: 8px;
+  padding: 12px 16px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+
+.Tab {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--card);
+  color: var(--muted);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.Tab[aria-selected="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #1a1209;
+}
+
+.Filters {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px 16px 0;
+}
+
+.Chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.Chip {
+  padding: 6px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.Chip.Active {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.Select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--card);
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.List {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  max-width: 640px;
+  margin: 0 auto;
+  min-height: 70vh;
+}
+
+.Item {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--card);
+}
+
+.Item.Unavailable {
+  opacity: 0.45;
+}
+
+.ItemName {
+  font-weight: 600;
+}
+
+.ItemMeta {
+  margin-top: 2px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.ItemPrice {
+  white-space: nowrap;
+  font-weight: 700;
+  color: var(--accent);
+  text-align: right;
+}
+
+.Sold {
+  display: block;
+  margin-top: 2px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.Empty {
+  padding: 24px;
+  text-align: center;
+  color: var(--muted);
+}
+
+.Footer {
+  padding: 8px 16px 32px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
