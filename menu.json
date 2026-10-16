@@ -25,7 +25,8 @@
       "abv": 0.0,
       "size": "33 cl",
       "price": 1,
-      "available": true
+      "available": true,
+      "glutenFree": true
     },
     {
       "name": "Wingman",
@@ -43,7 +44,8 @@
       "abv": 5.4,
       "size": "33 cl",
       "price": 2,
-      "available": true
+      "available": true,
+      "glutenFree": true
     },
     {
       "name": "Punk IPA",
@@ -106,7 +108,7 @@
       "abv": 4.7,
       "size": "50 cl",
       "price": 3,
-      "available": false
+      "available": true
     },
     {
       "name": "Stirling",
@@ -115,7 +117,8 @@
       "abv": 4.7,
       "size": "50 cl",
       "price": 3,
-      "available": true
+      "available": true,
+      "glutenFree": true
     },
     {
       "name": "Speakeasy",
@@ -272,7 +275,8 @@
       "size": "50 cl",
       "price": 3,
       "deposit": 0.5,
-      "available": true
+      "available": true,
+      "glutenFree": true
     },
     {
       "name": "Hazy Nectar",
@@ -281,6 +285,35 @@
       "abv": 4.0,
       "size": "33 cl",
       "price": 3,
+      "available": true,
+      "glutenFree": true
+    },
+    {
+      "name": "Martigny Vice",
+      "brewery": "Whitefrontier",
+      "type": "IPA",
+      "abv": 3.5,
+      "size": "33 cl",
+      "price": 3,
+      "available": false
+    },
+    {
+      "name": "Pillow",
+      "brewery": "Whitefrontier",
+      "type": "Blanche",
+      "abv": 4.0,
+      "size": "33 cl",
+      "price": 3,
+      "available": true
+    },
+    {
+      "name": "Cidre Ananas",
+      "brewery": "Black Pig",
+      "type": "Cidre",
+      "abv": 6.8,
+      "size": "33 cl",
+      "price": 3,
+      "glutenFree": true,
       "available": true
     }
   ],

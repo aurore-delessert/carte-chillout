@@ -2,6 +2,7 @@ const _state = {
   tab: "beers",
   type: "all",
   brewery: "all",
+  gluten: false,
   data: { beers: [], softs: [] }
 };
 
@@ -42,6 +43,7 @@ function _renderTabs() {
       _state.tab = tab.key;
       _state.type = "all";
       _state.brewery = "all";
+      _state.gluten = false;
       _render();
     });
     container.appendChild(button);
@@ -68,6 +70,16 @@ function _renderFilters() {
     });
     chips.appendChild(chip);
   });
+  const glutenChip = _el("button", "Chip", "Sans gluten");
+  glutenChip.type = "button";
+  glutenChip.setAttribute("aria-pressed", String(_state.gluten));
+  if (_state.gluten) glutenChip.classList.add("Active");
+  glutenChip.addEventListener("click", () => {
+    _state.gluten = !_state.gluten;
+    _renderFilters();
+    _renderList();
+  });
+  chips.appendChild(glutenChip);
   container.appendChild(chips);
 
   const select = _el("select", "Select");
@@ -93,7 +105,15 @@ function _buildItem(item, isBeer) {
   if (item.available === false) row.classList.add("Unavailable");
 
   const left = _el("div");
-  left.appendChild(_el("div", "ItemName", item.name));
+  const nameRow = _el("div", "ItemName", item.name);
+  if (item.glutenFree) {
+    const icon = _el("img", "GlutenIcon");
+    icon.src = "images/gluten.png";
+    icon.alt = "Sans gluten";
+    icon.title = "Sans gluten";
+    nameRow.appendChild(icon);
+  }
+  left.appendChild(nameRow);
   const metaParts = [];
   const maker = isBeer ? item.brewery : item.brand;
   if (maker) metaParts.push(maker);
@@ -126,7 +146,8 @@ function _renderList() {
   items = items.filter((item) => {
     const typeOk = _state.type === "all" || item.type === _state.type;
     const makerOk = _state.brewery === "all" || item[makerKey] === _state.brewery;
-    return typeOk && makerOk;
+    const glutenOk = !_state.gluten || item.glutenFree === true;
+    return typeOk && makerOk && glutenOk;
   });
 
   items = [...items].sort((a, b) => {
